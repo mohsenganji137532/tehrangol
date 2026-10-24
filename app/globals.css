@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { background: #F7F2E7; color: #2F4A36; font-family: 'Vazirmatn Variable', Tahoma, sans-serif; }
+:focus-visible { outline: 2px solid #5E7F63; outline-offset: 3px; }
+.arch { border-radius: 999px 999px 1.25rem 1.25rem; }
+@keyframes bloom { from { opacity: 0; transform: scale(.94); } to { opacity: 1; transform: scale(1); } }
+.bloom { animation: bloom .9s ease-out both; }
+@media (prefers-reduced-motion: reduce) { .bloom { animation: none; } html { scroll-behavior: auto; } }
